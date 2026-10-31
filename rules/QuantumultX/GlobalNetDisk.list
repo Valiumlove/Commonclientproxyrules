@@ -1,0 +1,66 @@
+# NAME: GlobalNetDisk
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-10-29 10:39:33
+# HOST: 3
+# HOST-SUFFIX: 56
+
+HOST,dropbox.zendesk.com,GlobalNetDisk
+HOST,o4504926511693824.ingest.sentry.io,GlobalNetDisk
+HOST,paper-attachments.s3.amazonaws.com,GlobalNetDisk
+HOST-SUFFIX,1024terabox.com,GlobalNetDisk
+HOST-SUFFIX,1drv.com,GlobalNetDisk
+HOST-SUFFIX,1drv.ms,GlobalNetDisk
+HOST-SUFFIX,addtodropbox.com,GlobalNetDisk
+HOST-SUFFIX,bestclouddrive.com,GlobalNetDisk
+HOST-SUFFIX,dash.ai,GlobalNetDisk
+HOST-SUFFIX,db.tt,GlobalNetDisk
+HOST-SUFFIX,docsend.com,GlobalNetDisk
+HOST-SUFFIX,dropbox-dns.com,GlobalNetDisk
+HOST-SUFFIX,dropbox.com,GlobalNetDisk
+HOST-SUFFIX,dropbox.tech,GlobalNetDisk
+HOST-SUFFIX,dropboxapi.com,GlobalNetDisk
+HOST-SUFFIX,dropboxbusiness.com,GlobalNetDisk
+HOST-SUFFIX,dropboxcaptcha.com,GlobalNetDisk
+HOST-SUFFIX,dropboxexperiment.com,GlobalNetDisk
+HOST-SUFFIX,dropboxforum.com,GlobalNetDisk
+HOST-SUFFIX,dropboxforums.com,GlobalNetDisk
+HOST-SUFFIX,dropboxinsiders.com,GlobalNetDisk
+HOST-SUFFIX,dropboxlegal.com,GlobalNetDisk
+HOST-SUFFIX,dropboxmail.com,GlobalNetDisk
+HOST-SUFFIX,dropboxpartners.com,GlobalNetDisk
+HOST-SUFFIX,dropboxstatic.com,GlobalNetDisk
+HOST-SUFFIX,dropboxteam.com,GlobalNetDisk
+HOST-SUFFIX,dropboxusercontent.com,GlobalNetDisk
+HOST-SUFFIX,freeterabox.com,GlobalNetDisk
+HOST-SUFFIX,getdropbox.com,GlobalNetDisk
+HOST-SUFFIX,hellofax.com,GlobalNetDisk
+HOST-SUFFIX,hellosign.com,GlobalNetDisk
+HOST-SUFFIX,livefilestore.com,GlobalNetDisk
+HOST-SUFFIX,mega.co.nz,GlobalNetDisk
+HOST-SUFFIX,mega.io,GlobalNetDisk
+HOST-SUFFIX,mega.nz,GlobalNetDisk
+HOST-SUFFIX,megaad.nz,GlobalNetDisk
+HOST-SUFFIX,megapay.nz,GlobalNetDisk
+HOST-SUFFIX,megas4.com,GlobalNetDisk
+HOST-SUFFIX,mypikpak.com,GlobalNetDisk
+HOST-SUFFIX,mypikpak.net,GlobalNetDisk
+HOST-SUFFIX,nephobox.com,GlobalNetDisk
+HOST-SUFFIX,onedrive.co,GlobalNetDisk
+HOST-SUFFIX,onedrive.co.uk,GlobalNetDisk
+HOST-SUFFIX,onedrive.com,GlobalNetDisk
+HOST-SUFFIX,onedrive.eu,GlobalNetDisk
+HOST-SUFFIX,onedrive.live.com,GlobalNetDisk
+HOST-SUFFIX,onedrive.net,GlobalNetDisk
+HOST-SUFFIX,onedrive.org,GlobalNetDisk
+HOST-SUFFIX,pickpackapp.com,GlobalNetDisk
+HOST-SUFFIX,pikpak.io,GlobalNetDisk
+HOST-SUFFIX,pikpak.me,GlobalNetDisk
+HOST-SUFFIX,pikpakdrive.com,GlobalNetDisk
+HOST-SUFFIX,storage.live.com,GlobalNetDisk
+HOST-SUFFIX,terabox.com,GlobalNetDisk
+HOST-SUFFIX,terabox1024.com,GlobalNetDisk
+HOST-SUFFIX,teraboxcdn.com,GlobalNetDisk
+HOST-SUFFIX,transfer.it,GlobalNetDisk
+HOST-SUFFIX,userdrive.org,GlobalNetDisk
+HOST-SUFFIX,usersdrive.com,GlobalNetDisk

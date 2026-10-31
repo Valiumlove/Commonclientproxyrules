@@ -1,0 +1,11 @@
+# NAME: StandardChartered
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:40:58
+# HOST: 2
+# HOST-SUFFIX: 2
+
+HOST,standchartbank.sc.omtrdc.net,StandardChartered
+HOST,standchartbank.tt.omtrdc.net,StandardChartered
+HOST-SUFFIX,sc.com,StandardChartered
+HOST-SUFFIX,standardchartered.com,StandardChartered

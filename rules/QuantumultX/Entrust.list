@@ -1,0 +1,17 @@
+# NAME: Entrust
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:53:15
+# HOST: 1
+# HOST-SUFFIX: 9
+
+HOST,www.entrust.cn,Entrust
+HOST-SUFFIX,affirmtrust.com,Entrust
+HOST-SUFFIX,atos.net,Entrust
+HOST-SUFFIX,certificat2.com,Entrust
+HOST-SUFFIX,entrust.cn,Entrust
+HOST-SUFFIX,entrust.com,Entrust
+HOST-SUFFIX,entrust.net,Entrust
+HOST-SUFFIX,entrustdatacard.com,Entrust
+HOST-SUFFIX,myatos.net,Entrust
+HOST-SUFFIX,trendmicro.com,Entrust

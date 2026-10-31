@@ -1,0 +1,37 @@
+# NAME: SwissSign
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:43:47
+# HOST-SUFFIX: 31
+
+HOST-SUFFIX,digital-id.ch,SwissSign
+HOST-SUFFIX,digitalid.ch,SwissSign
+HOST-SUFFIX,managed-pki.ch,SwissSign
+HOST-SUFFIX,managed-pki.de,SwissSign
+HOST-SUFFIX,pki-post.ch,SwissSign
+HOST-SUFFIX,pki-posta.ch,SwissSign
+HOST-SUFFIX,pki-poste.ch,SwissSign
+HOST-SUFFIX,root-signing.ch,SwissSign
+HOST-SUFFIX,rootsigning.com,SwissSign
+HOST-SUFFIX,ssl-certificate.ch,SwissSign
+HOST-SUFFIX,swissid.ch,SwissSign
+HOST-SUFFIX,swissign.com,SwissSign
+HOST-SUFFIX,swissign.li,SwissSign
+HOST-SUFFIX,swisssign-group.ch,SwissSign
+HOST-SUFFIX,swisssign-group.com,SwissSign
+HOST-SUFFIX,swisssign-group.li,SwissSign
+HOST-SUFFIX,swisssign.ch,SwissSign
+HOST-SUFFIX,swisssign.com,SwissSign
+HOST-SUFFIX,swisssign.li,SwissSign
+HOST-SUFFIX,swisssign.net,SwissSign
+HOST-SUFFIX,swisssign.org,SwissSign
+HOST-SUFFIX,swisssigner.ch,SwissSign
+HOST-SUFFIX,swisssigner.com,SwissSign
+HOST-SUFFIX,swisssigngroup.ch,SwissSign
+HOST-SUFFIX,swisssigngroup.com,SwissSign
+HOST-SUFFIX,swissstick.com,SwissSign
+HOST-SUFFIX,swisstsa.ch,SwissSign
+HOST-SUFFIX,swisstsa.li,SwissSign
+HOST-SUFFIX,trustdoc.ch,SwissSign
+HOST-SUFFIX,trustsign.ch,SwissSign
+HOST-SUFFIX,zert.ch,SwissSign

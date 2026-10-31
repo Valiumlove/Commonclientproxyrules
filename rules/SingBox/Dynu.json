@@ -1,0 +1,32 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain_suffix": [
+        "1cooldns.com",
+        "4cloud.click",
+        "accesscam.org",
+        "bumbleshrimp.com",
+        "camdvr.org",
+        "casacam.net",
+        "ddnsfree.com",
+        "ddnsgeek.com",
+        "ddnsguru.com",
+        "dynu.com",
+        "dynu.net",
+        "dynuddns.com",
+        "dynuddns.net",
+        "freeddns.org",
+        "giize.com",
+        "gleeze.com",
+        "kozow.com",
+        "loseyourip.com",
+        "mysynology.net",
+        "mywire.org",
+        "ooguy.com",
+        "theworkpc.com",
+        "webredirect.org"
+      ]
+    }
+  ]
+}

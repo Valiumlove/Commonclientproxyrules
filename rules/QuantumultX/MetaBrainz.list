@@ -1,0 +1,14 @@
+# NAME: MetaBrainz
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:42:46
+# HOST-SUFFIX: 8
+
+HOST-SUFFIX,acousticbrainz.org,MetaBrainz
+HOST-SUFFIX,bookbrainz.org,MetaBrainz
+HOST-SUFFIX,coverartarchive.org,MetaBrainz
+HOST-SUFFIX,critiquebrainz.org,MetaBrainz
+HOST-SUFFIX,listenbrainz.org,MetaBrainz
+HOST-SUFFIX,messybrainz.org,MetaBrainz
+HOST-SUFFIX,metabrainz.org,MetaBrainz
+HOST-SUFFIX,musicbrainz.org,MetaBrainz

@@ -1,0 +1,10 @@
+# NAME: OpenSpeedTest
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-10-29 10:46:06
+# HOST-SUFFIX: 4
+
+HOST-SUFFIX,open.cachefly.net,OpenSpeedTest
+HOST-SUFFIX,openspeedtest.com,OpenSpeedTest
+HOST-SUFFIX,openspeedtest.in,OpenSpeedTest
+HOST-SUFFIX,openspeedtest.org,OpenSpeedTest

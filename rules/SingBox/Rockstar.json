@@ -1,0 +1,29 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain": [
+        "conductor-prod.ros.rockstargames.com",
+        "gamedownloads-rockstargames-com.akamaized.net",
+        "media-rockstargames-com.akamaized.net",
+        "patches.rockstargames.com",
+        "prod.cloud.rockstargames.com",
+        "prod.cs.ros.rockstargames.com",
+        "prod.p01sjc.pod.rockstargames.com",
+        "prod.p02sjc.pod.rockstargames.com",
+        "prod.ros.rockstargames.com",
+        "prod.telemetry.ros.rockstargames.com",
+        "videos-rockstargames-com.akamaized.net"
+      ],
+      "domain_suffix": [
+        "gamedownloads-rockstargames-com.akamaized.net",
+        "media-rockstargames-com.akamaized.net",
+        "rockstargames.com",
+        "rockstarnorth.com",
+        "rsg.ms",
+        "rsg.sc",
+        "videos-rockstargames-com.akamaized.net"
+      ]
+    }
+  ]
+}

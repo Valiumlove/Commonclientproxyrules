@@ -1,0 +1,10 @@
+# NAME: Plex
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:50:39
+# HOST-SUFFIX: 4
+
+HOST-SUFFIX,plex.com,Plex
+HOST-SUFFIX,plex.services,Plex
+HOST-SUFFIX,plex.tv,Plex
+HOST-SUFFIX,plexapp.com,Plex

@@ -1,0 +1,19 @@
+# NAME: Fandom
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:53:58
+# HOST: 1
+# HOST-SUFFIX: 11
+
+HOST,fandom.zendesk.com,Fandom
+HOST-SUFFIX,cortexrpg.com,Fandom
+HOST-SUFFIX,cursecdn.com,Fandom
+HOST-SUFFIX,dndbeyond.com,Fandom
+HOST-SUFFIX,fanatical.com,Fandom
+HOST-SUFFIX,fandom.com,Fandom
+HOST-SUFFIX,futhead.com,Fandom
+HOST-SUFFIX,gamepedia.com,Fandom
+HOST-SUFFIX,muthead.com,Fandom
+HOST-SUFFIX,wikia.com,Fandom
+HOST-SUFFIX,wikia.nocookie.net,Fandom
+HOST-SUFFIX,wikia.org,Fandom

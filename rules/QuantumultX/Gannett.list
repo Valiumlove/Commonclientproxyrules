@@ -1,0 +1,11 @@
+# NAME: Gannett
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:47:24
+# HOST-SUFFIX: 5
+
+HOST-SUFFIX,gannett-cdn.com,Gannett
+HOST-SUFFIX,gannett.com,Gannett
+HOST-SUFFIX,gannettdigital.com,Gannett
+HOST-SUFFIX,usatoday.com,Gannett
+HOST-SUFFIX,usatodaynetworkservice.com,Gannett

@@ -1,0 +1,11 @@
+# NAME: FontShop
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:44:58
+# HOST: 1
+# HOST-SUFFIX: 3
+
+HOST,fontshop-prod-responsive-images.s3.amazonaws.com,FontShop
+HOST-SUFFIX,fontbook.com,FontShop
+HOST-SUFFIX,fontshop.com,FontShop
+HOST-SUFFIX,fstopimages.com,FontShop

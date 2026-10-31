@@ -1,0 +1,14 @@
+# NAME: Hikvision
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:54:42
+# HOST-SUFFIX: 8
+
+HOST-SUFFIX,eziot.com,Hikvision
+HOST-SUFFIX,ezviz.com,Hikvision
+HOST-SUFFIX,hik-cloud.com,Hikvision
+HOST-SUFFIX,hik-express.com,Hikvision
+HOST-SUFFIX,hikiot.com,Hikvision
+HOST-SUFFIX,hikmall.com,Hikvision
+HOST-SUFFIX,hikvision.com,Hikvision
+HOST-SUFFIX,ys7.com,Hikvision

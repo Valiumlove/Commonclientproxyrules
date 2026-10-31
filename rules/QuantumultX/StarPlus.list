@@ -1,0 +1,12 @@
+# NAME: StarPlus
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:55:14
+# HOST-SUFFIX: 6
+
+HOST-SUFFIX,star.api.edge.bamgrid.com,StarPlus
+HOST-SUFFIX,star.connections.edge.bamgrid.com,StarPlus
+HOST-SUFFIX,star.content.edge.bamgrid.com,StarPlus
+HOST-SUFFIX,star.playback.edge.bamgrid.com,StarPlus
+HOST-SUFFIX,starott.com,StarPlus
+HOST-SUFFIX,starplus.com,StarPlus

@@ -1,0 +1,9 @@
+# NAME: TeamSpeak
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:41:12
+# HOST-SUFFIX: 3
+
+HOST-SUFFIX,myteamspeak.com,TeamSpeak
+HOST-SUFFIX,teamspeak-services.com,TeamSpeak
+HOST-SUFFIX,teamspeak.com,TeamSpeak

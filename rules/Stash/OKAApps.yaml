@@ -1,0 +1,11 @@
+# NAME: OKAApps
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:43:50
+# BEHAVIOR: classical
+# DOMAIN-SUFFIX: 1
+# DOMAIN-REGEX: 1
+
+payload:
+- 'DOMAIN-SUFFIX,okaapps.com'
+- 'DOMAIN-REGEX,^(.+\.)*zh\.okaapps\.com$'

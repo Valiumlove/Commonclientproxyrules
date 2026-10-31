@@ -1,0 +1,9 @@
+# NAME: HCaptcha
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:55:42
+# HOST-SUFFIX: 3
+
+HOST-SUFFIX,botstop.com,HCaptcha
+HOST-SUFFIX,hcaptcha.com,HCaptcha
+HOST-SUFFIX,hcaptchastatus.com,HCaptcha

@@ -1,0 +1,20 @@
+# NAME: OpenJSFoundation
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:47:40
+# HOST: 2
+# HOST-SUFFIX: 11
+
+HOST,amp.akamaized.net,OpenJSFoundation
+HOST,cdn.ampproject.org,OpenJSFoundation
+HOST-SUFFIX,amp.dev,OpenJSFoundation
+HOST-SUFFIX,ampproject.com,OpenJSFoundation
+HOST-SUFFIX,ampproject.net,OpenJSFoundation
+HOST-SUFFIX,ampproject.org,OpenJSFoundation
+HOST-SUFFIX,electronjs.org,OpenJSFoundation
+HOST-SUFFIX,jquery.com,OpenJSFoundation
+HOST-SUFFIX,jquerymobile.com,OpenJSFoundation
+HOST-SUFFIX,jqueryui.com,OpenJSFoundation
+HOST-SUFFIX,mochajs.org,OpenJSFoundation
+HOST-SUFFIX,nodejs.org,OpenJSFoundation
+HOST-SUFFIX,openjsf.org,OpenJSFoundation

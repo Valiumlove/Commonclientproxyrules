@@ -1,0 +1,12 @@
+# NAME: Fedora
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:51:41
+# HOST-SUFFIX: 6
+
+HOST-SUFFIX,fedoraforum.org,Fedora
+HOST-SUFFIX,fedorainfracloud.org,Fedora
+HOST-SUFFIX,fedoramagazine.org,Fedora
+HOST-SUFFIX,fedorapeople.org,Fedora
+HOST-SUFFIX,fedoraproject.org,Fedora
+HOST-SUFFIX,getfedora.org,Fedora

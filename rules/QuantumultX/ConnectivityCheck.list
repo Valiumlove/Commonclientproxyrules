@@ -1,0 +1,35 @@
+# NAME: ConnectivityCheck
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-10-10 00:17:39
+# HOST: 17
+# HOST-SUFFIX: 11
+
+HOST,conn1.oppomobile.com,ConnectivityCheck
+HOST,conn2.oppomobile.com,ConnectivityCheck
+HOST,connect.rom.miui.com,ConnectivityCheck
+HOST,connectivity-check.ubuntu.com,ConnectivityCheck
+HOST,connectivity.samsung.com.cn,ConnectivityCheck
+HOST,connectivitycheck.gstatic.com,ConnectivityCheck
+HOST,connectivitycheck.platform.hicloud.com,ConnectivityCheck
+HOST,connectivitycheck.platform.hihonorcloud.com,ConnectivityCheck
+HOST,edge-http.microsoft.com,ConnectivityCheck
+HOST,networkcheck.kde.org,ConnectivityCheck
+HOST,nmcheck.gnome.org,ConnectivityCheck
+HOST,ping.archlinux.org,ConnectivityCheck
+HOST,redirect.archlinux.org,ConnectivityCheck
+HOST,wifi.vivo.com.cn,ConnectivityCheck
+HOST,www.gstatic.com,ConnectivityCheck
+HOST,www.qualcomm.cn,ConnectivityCheck
+HOST,www.qualcomm.com,ConnectivityCheck
+HOST-SUFFIX,captive.apple.com,ConnectivityCheck
+HOST-SUFFIX,cp.cloudflare.com,ConnectivityCheck
+HOST-SUFFIX,detectportal.firefox.com,ConnectivityCheck
+HOST-SUFFIX,firefox-portal-detection.com,ConnectivityCheck
+HOST-SUFFIX,ipv6check-http.steamserver.net,ConnectivityCheck
+HOST-SUFFIX,ipv6check-udp.steamserver.net,ConnectivityCheck
+HOST-SUFFIX,kuketz.de,ConnectivityCheck
+HOST-SUFFIX,msftconnecttest.com,ConnectivityCheck
+HOST-SUFFIX,msftncsi.com,ConnectivityCheck
+HOST-SUFFIX,network-test.debian.org,ConnectivityCheck
+HOST-SUFFIX,test.steampowered.com,ConnectivityCheck

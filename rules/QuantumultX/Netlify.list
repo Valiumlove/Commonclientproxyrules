@@ -1,0 +1,17 @@
+# NAME: Netlify
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:48:27
+# HOST: 3
+# HOST-SUFFIX: 7
+
+HOST,acd89244c803f7181.awsglobalaccelerator.com,Netlify
+HOST,afa7f374f51cc8991.awsglobalaccelerator.com,Netlify
+HOST,d33wubrfki0l68.cloudfront.net,Netlify
+HOST-SUFFIX,bitballoon.com,Netlify
+HOST-SUFFIX,netlify.app,Netlify
+HOST-SUFFIX,netlify.com,Netlify
+HOST-SUFFIX,netlifydns.com,Netlify
+HOST-SUFFIX,netlifystatus.com,Netlify
+HOST-SUFFIX,netlifyusercontent.com,Netlify
+HOST-SUFFIX,ntl.fyi,Netlify

@@ -1,0 +1,20 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain_suffix": [
+        "95599.cn",
+        "abc-studios.com",
+        "abc.com",
+        "abchina.com",
+        "abcnews.com",
+        "bscabank.com",
+        "edgedatg.com",
+        "go.com",
+        "openaboc.cn",
+        "openaboc.com",
+        "openaboc.com.cn"
+      ]
+    }
+  ]
+}

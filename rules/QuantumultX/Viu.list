@@ -1,0 +1,13 @@
+# NAME: Viu
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:40:19
+# HOST: 4
+# HOST-SUFFIX: 2
+
+HOST,api.viu.now.com,Viu
+HOST,d1k2us671qcoau.cloudfront.net,Viu
+HOST,d2anahhhmp1ffz.cloudfront.net,Viu
+HOST,dfp6rglgjqszk.cloudfront.net,Viu
+HOST-SUFFIX,viu.com,Viu
+HOST-SUFFIX,viu.tv,Viu

@@ -1,0 +1,15 @@
+# NAME: OpenStreetMap
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:53:38
+# HOST-SUFFIX: 9
+
+HOST-SUFFIX,openmaps.org,OpenStreetMap
+HOST-SUFFIX,openstreetmap.com,OpenStreetMap
+HOST-SUFFIX,openstreetmap.net,OpenStreetMap
+HOST-SUFFIX,openstreetmap.org,OpenStreetMap
+HOST-SUFFIX,openstreetmaps.org,OpenStreetMap
+HOST-SUFFIX,osm.org,OpenStreetMap
+HOST-SUFFIX,osmfoundation.org,OpenStreetMap
+HOST-SUFFIX,stateofthemap.com,OpenStreetMap
+HOST-SUFFIX,stateofthemap.org,OpenStreetMap

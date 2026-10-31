@@ -1,0 +1,18 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain_suffix": [
+        "iflix-images.akamaized.net",
+        "iflix.com",
+        "vv.video.qq.com",
+        "wetv.vip",
+        "wetvinfo.com"
+      ],
+      "process_name": [
+        "com.tencent.qqlivei18n",
+        "com.tencent.qqlivei18n.us"
+      ]
+    }
+  ]
+}

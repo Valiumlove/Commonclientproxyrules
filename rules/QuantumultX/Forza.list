@@ -1,0 +1,12 @@
+# NAME: Forza
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:47:54
+# HOST: 1
+# HOST-SUFFIX: 4
+
+HOST,prodforza.blob.core.windows.net,Forza
+HOST-SUFFIX,forza.net,Forza
+HOST-SUFFIX,forzamotorsport.net,Forza
+HOST-SUFFIX,forzaracingchampionship.com,Forza
+HOST-SUFFIX,forzarc.com,Forza

@@ -1,0 +1,11 @@
+# NAME: QWeather
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:43:43
+# HOST-SUFFIX: 5
+
+HOST-SUFFIX,hecdn.net,QWeather
+HOST-SUFFIX,heweather.net,QWeather
+HOST-SUFFIX,qweather.com,QWeather
+HOST-SUFFIX,qweather.net,QWeather
+HOST-SUFFIX,qweatherapi.com,QWeather

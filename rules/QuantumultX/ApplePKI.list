@@ -1,0 +1,14 @@
+# NAME: ApplePKI
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:42:04
+# HOST: 8
+
+HOST,certs-lb.apple.com.akadns.net,ApplePKI
+HOST,certs.apple.com,ApplePKI
+HOST,crl-lb.apple.com.akadns.net,ApplePKI
+HOST,crl.apple.com,ApplePKI
+HOST,ocsp.apple.com,ApplePKI
+HOST,ocsp2.apple.com,ApplePKI
+HOST,valid.apple.com,ApplePKI
+HOST,valid.origin-apple.com.akadns.net,ApplePKI

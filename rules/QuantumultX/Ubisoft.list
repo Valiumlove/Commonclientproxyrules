@@ -1,0 +1,38 @@
+# NAME: Ubisoft
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:49:49
+# HOST: 27
+# HOST-SUFFIX: 4
+
+HOST,ubisoft-orbit-savegames.s3.amazonaws.com,Ubisoft
+HOST,ubisoft-uplay-savegames.s3.amazonaws.com,Ubisoft
+HOST,ubisoft.siteintercept.qualtrics.com,Ubisoft
+HOST,ubistatic1-a.akamaihd.net,Ubisoft
+HOST,ubistatic10-a.akamaihd.net,Ubisoft
+HOST,ubistatic11-a.akamaihd.net,Ubisoft
+HOST,ubistatic12-a.akamaihd.net,Ubisoft
+HOST,ubistatic13-a.akamaihd.net,Ubisoft
+HOST,ubistatic14-a.akamaihd.net,Ubisoft
+HOST,ubistatic15-a.akamaihd.net,Ubisoft
+HOST,ubistatic16-a.akamaihd.net,Ubisoft
+HOST,ubistatic17-a.akamaihd.net,Ubisoft
+HOST,ubistatic18-a.akamaihd.net,Ubisoft
+HOST,ubistatic19-a.akamaihd.net,Ubisoft
+HOST,ubistatic2-a.akamaihd.net,Ubisoft
+HOST,ubistatic20-a.akamaihd.net,Ubisoft
+HOST,ubistatic21-a.akamaihd.net,Ubisoft
+HOST,ubistatic22-a.akamaihd.net,Ubisoft
+HOST,ubistatic23-a.akamaihd.net,Ubisoft
+HOST,ubistatic24-a.akamaihd.net,Ubisoft
+HOST,ubistatic3-a.akamaihd.net,Ubisoft
+HOST,ubistatic4-a.akamaihd.net,Ubisoft
+HOST,ubistatic5-a.akamaihd.net,Ubisoft
+HOST,ubistatic6-a.akamaihd.net,Ubisoft
+HOST,ubistatic7-a.akamaihd.net,Ubisoft
+HOST,ubistatic8-a.akamaihd.net,Ubisoft
+HOST,ubistatic9-a.akamaihd.net,Ubisoft
+HOST-SUFFIX,ubi.com,Ubisoft
+HOST-SUFFIX,ubisoft.com,Ubisoft
+HOST-SUFFIX,ubisoftconnect.com,Ubisoft
+HOST-SUFFIX,uplay.com,Ubisoft

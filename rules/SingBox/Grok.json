@@ -1,0 +1,13 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain_suffix": [
+        "grok.com",
+        "grok.x.com",
+        "grokipedia.com",
+        "x.ai"
+      ]
+    }
+  ]
+}

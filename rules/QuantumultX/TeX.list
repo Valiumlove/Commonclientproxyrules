@@ -1,0 +1,10 @@
+# NAME: TeX
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:49:42
+# HOST-SUFFIX: 4
+
+HOST-SUFFIX,ctan.org,TeX
+HOST-SUFFIX,latex-project.org,TeX
+HOST-SUFFIX,miktex.org,TeX
+HOST-SUFFIX,tug.org,TeX

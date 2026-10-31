@@ -1,0 +1,26 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain": [
+        "apkmirror.disqus.com"
+      ],
+      "domain_suffix": [
+        "apkcombo.com",
+        "apkmirror.com",
+        "apkpure.com",
+        "apkpure.net",
+        "apkpures.xyz",
+        "cdnpure.com",
+        "f-dro1d.org",
+        "f-droid.com",
+        "f-droid.org",
+        "fdroid.org",
+        "pureapk.com",
+        "uptodown.com",
+        "utdstc.com",
+        "winudf.com"
+      ]
+    }
+  ]
+}

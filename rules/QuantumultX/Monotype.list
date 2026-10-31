@@ -1,0 +1,21 @@
+# NAME: Monotype
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:50:03
+# HOST: 1
+# HOST-SUFFIX: 13
+
+HOST,fontshop-prod-responsive-images.s3.amazonaws.com,Monotype
+HOST-SUFFIX,bitstream.com,Monotype
+HOST-SUFFIX,fontbook.com,Monotype
+HOST-SUFFIX,fontexplorerx.com,Monotype
+HOST-SUFFIX,fonts.com,Monotype
+HOST-SUFFIX,fonts.net,Monotype
+HOST-SUFFIX,fontshop.com,Monotype
+HOST-SUFFIX,fstopimages.com,Monotype
+HOST-SUFFIX,itcfonts.com,Monotype
+HOST-SUFFIX,linotype.com,Monotype
+HOST-SUFFIX,monotype.com,Monotype
+HOST-SUFFIX,monotypeimaging.com,Monotype
+HOST-SUFFIX,myfonts.com,Monotype
+HOST-SUFFIX,myfonts.net,Monotype

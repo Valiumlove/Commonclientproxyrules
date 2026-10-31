@@ -1,0 +1,13 @@
+# NAME: AMP
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:45:43
+# HOST: 2
+# HOST-SUFFIX: 4
+
+HOST,amp.akamaized.net,AMP
+HOST,cdn.ampproject.org,AMP
+HOST-SUFFIX,amp.dev,AMP
+HOST-SUFFIX,ampproject.com,AMP
+HOST-SUFFIX,ampproject.net,AMP
+HOST-SUFFIX,ampproject.org,AMP

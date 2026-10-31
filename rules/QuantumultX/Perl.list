@@ -1,0 +1,11 @@
+# NAME: Perl
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:43:31
+# HOST-SUFFIX: 5
+
+HOST-SUFFIX,cpan.org,Perl
+HOST-SUFFIX,metacpan.org,Perl
+HOST-SUFFIX,modperl.pl,Perl
+HOST-SUFFIX,perl.apache.org,Perl
+HOST-SUFFIX,perl.org,Perl

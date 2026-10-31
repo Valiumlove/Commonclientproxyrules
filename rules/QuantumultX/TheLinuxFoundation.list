@@ -1,0 +1,24 @@
+# NAME: TheLinuxFoundation
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:48:25
+# HOST: 2
+# HOST-SUFFIX: 15
+
+HOST,amp.akamaized.net,TheLinuxFoundation
+HOST,cdn.ampproject.org,TheLinuxFoundation
+HOST-SUFFIX,amp.dev,TheLinuxFoundation
+HOST-SUFFIX,ampproject.com,TheLinuxFoundation
+HOST-SUFFIX,ampproject.net,TheLinuxFoundation
+HOST-SUFFIX,ampproject.org,TheLinuxFoundation
+HOST-SUFFIX,electronjs.org,TheLinuxFoundation
+HOST-SUFFIX,jquery.com,TheLinuxFoundation
+HOST-SUFFIX,jquerymobile.com,TheLinuxFoundation
+HOST-SUFFIX,jqueryui.com,TheLinuxFoundation
+HOST-SUFFIX,kernel.org,TheLinuxFoundation
+HOST-SUFFIX,lfai.foundation,TheLinuxFoundation
+HOST-SUFFIX,linux.org,TheLinuxFoundation
+HOST-SUFFIX,linuxfoundation.org,TheLinuxFoundation
+HOST-SUFFIX,mochajs.org,TheLinuxFoundation
+HOST-SUFFIX,nodejs.org,TheLinuxFoundation
+HOST-SUFFIX,openjsf.org,TheLinuxFoundation

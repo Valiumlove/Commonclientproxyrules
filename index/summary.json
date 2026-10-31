@@ -1,0 +1,54 @@
+{
+  "upstream": "https://magicrule.pages.dev",
+  "clients": [
+    {
+      "client": "Loon",
+      "rule_count": 1185,
+      "total_line_count": 816093,
+      "bytes": 26088450,
+      "failed": 0
+    },
+    {
+      "client": "Mihomo",
+      "rule_count": 1185,
+      "total_line_count": 816256,
+      "bytes": 29282845,
+      "failed": 0
+    },
+    {
+      "client": "QuantumultX",
+      "rule_count": 1185,
+      "total_line_count": 816233,
+      "bytes": 36070566,
+      "failed": 0
+    },
+    {
+      "client": "Shadowrocket",
+      "rule_count": 1186,
+      "total_line_count": 816307,
+      "bytes": 26095079,
+      "failed": 0
+    },
+    {
+      "client": "SingBox",
+      "rule_count": 1184,
+      "total_line_count": 805933,
+      "bytes": 24833671,
+      "failed": 0
+    },
+    {
+      "client": "Stash",
+      "rule_count": 1186,
+      "total_line_count": 816350,
+      "bytes": 29399147,
+      "failed": 0
+    },
+    {
+      "client": "Surge",
+      "rule_count": 1186,
+      "total_line_count": 816307,
+      "bytes": 26095079,
+      "failed": 0
+    }
+  ]
+}

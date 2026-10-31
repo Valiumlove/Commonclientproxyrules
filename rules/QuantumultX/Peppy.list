@@ -1,0 +1,17 @@
+# NAME: Peppy
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:48:04
+# HOST: 9
+# HOST-SUFFIX: 1
+
+HOST,a.ppy.sh,Peppy
+HOST,assets.ppy.sh,Peppy
+HOST,c.ppy.sh,Peppy
+HOST,lazer.ppy.sh,Peppy
+HOST,m1.ppy.sh,Peppy
+HOST,notify.ppy.sh,Peppy
+HOST,osu.ppy.sh,Peppy
+HOST,sentry.ppy.sh,Peppy
+HOST,spectator.ppy.sh,Peppy
+HOST-SUFFIX,ppy.sh,Peppy

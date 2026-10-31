@@ -1,0 +1,26 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain_suffix": [
+        "ads-uo.api.leiniao.com",
+        "ads-ut.api.leiniao.com",
+        "ads.api.my7v.com",
+        "alcatel-home.com",
+        "alcatelmobile.com",
+        "blackberry.com",
+        "euads-o.api.leiniao.com",
+        "hmeng.cn",
+        "hmeng.net.cn",
+        "hwads-t.api.my7v.com",
+        "leiniao.com",
+        "my7v.com",
+        "tcl.com",
+        "tcl.com.cn",
+        "tclai.top",
+        "tcltech.com",
+        "testads.api.my7v.com"
+      ]
+    }
+  ]
+}

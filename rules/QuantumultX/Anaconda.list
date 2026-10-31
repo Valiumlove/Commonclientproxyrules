@@ -1,0 +1,10 @@
+# NAME: Anaconda
+# AUTHOR: MagicRule
+# REPO: https://magicrule.pages.dev/
+# UPDATED: 2026-08-27 09:51:58
+# HOST-SUFFIX: 4
+
+HOST-SUFFIX,anaconda.cloud,Anaconda
+HOST-SUFFIX,anaconda.com,Anaconda
+HOST-SUFFIX,anaconda.org,Anaconda
+HOST-SUFFIX,conda.io,Anaconda
