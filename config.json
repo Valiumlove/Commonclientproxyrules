@@ -1,0 +1,28 @@
+{
+  "upstream": "https://magicrule.pages.dev",
+  "clients": [
+    "Surge",
+    "Mihomo",
+    "QuantumultX",
+    "Loon",
+    "Shadowrocket",
+    "Stash",
+    "SingBox"
+  ],
+  "artifactKeys": {
+    "Surge": "rules",
+    "Mihomo": "classical",
+    "QuantumultX": "rules",
+    "Loon": "rules",
+    "Shadowrocket": "rules",
+    "Stash": "classical",
+    "SingBox": "source",
+    "AdGuard": "rules",
+    "Egern": "rules",
+    "Surfboard": "rules"
+  },
+  "concurrency": 8,
+  "maxFileBytes": 67108864,
+  "maxShrinkRatio": 0.25,
+  "maxFailureRatio": 0.02
+}
