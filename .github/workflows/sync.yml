@@ -1,0 +1,90 @@
+name: 同步 MagicRule 规则
+
+on:
+  schedule:
+    # 每天 03:23 UTC（北京时间 11:23 / 美西 20:23）自动同步
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "全量校验：逐条重新核对所有规则（默认只同步有变化的规则）"
+        type: boolean
+        default: false
+      prune:
+        description: "删除 config.json 中已移除客户端的规则目录"
+        type: boolean
+        default: false
+      allow_shrink:
+        description: "允许上游规则数大幅下降（确认上游确实删除了大量规则时使用）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: magicrule-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: 抓取并提交
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TZ: UTC
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: 准备 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 同步规则
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=""
+          # 每周日（UTC）自动做一次全量核对，其余日子走增量
+          if [ "$(date -u +%u)" = "7" ]; then
+            args="$args --full"
+          fi
+          if [ "${{ inputs.full }}" = "true" ]; then
+            args="$args --full"
+          fi
+          if [ "${{ inputs.prune }}" = "true" ]; then
+            args="$args --prune"
+          fi
+          if [ "${{ inputs.allow_shrink }}" = "true" ]; then
+            args="$args --allow-shrink"
+          fi
+          node scripts/sync.mjs $args
+
+      - name: 提交并推送
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "没有变化，跳过提交"
+            exit 0
+          fi
+          git config user.name "magicrule-sync[bot]"
+          git config user.email "magicrule-sync[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: 同步 MagicRule 规则 $(date -u +%F)"
+          for i in 1 2 3; do
+            if git push; then
+              echo "推送成功"
+              exit 0
+            fi
+            # 远端有新提交时先补齐浅克隆历史，再 rebase 重试
+            git fetch --unshallow 2>/dev/null || true
+            git pull --rebase --autostash || true
+            sleep 5
+          done
+          echo "推送失败" >&2
+          exit 1
