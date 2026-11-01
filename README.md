@@ -19,12 +19,27 @@
 | Sing-box | `.json` | `rules/SingBox/` | `source` |
 
 > 每个规则集一个文件，文件名就是上游规则名（如 `Advertising.list`、`Direct.yaml`）。
+> 每个客户端目录下还有一份自动生成的 [`README.md`](rules/Surge/README.md)，里面是**可直接复制的常用规则导入片段**和全部规则的 raw 链接。
+>
 > 需要 AdGuard / Egern / Surfboard？在 `config.json` 的 `clients` 里加上即可（见下文）。
+
+## 直接打开各客户端规则目录
+
+| 客户端 | 规则目录（含复制导入示例 + 全部规则链接） |
+| --- | --- |
+| Surge | [rules/Surge/README.md](rules/Surge/README.md) |
+| Mihomo（Clash Meta） | [rules/Mihomo/README.md](rules/Mihomo/README.md) |
+| Quantumult X | [rules/QuantumultX/README.md](rules/QuantumultX/README.md) |
+| Loon | [rules/Loon/README.md](rules/Loon/README.md) |
+| Shadowrocket | [rules/Shadowrocket/README.md](rules/Shadowrocket/README.md) |
+| Stash | [rules/Stash/README.md](rules/Stash/README.md) |
+| Sing-box | [rules/SingBox/README.md](rules/SingBox/README.md) |
 
 ## 目录结构
 
 ```
 rules/<客户端>/<规则名>.<扩展名>   # 规则文件本体
+rules/<客户端>/README.md          # 自动生成的规则目录（常用规则导入片段 + 全部 raw 链接）
 index/<客户端>.json               # 该客户端的规则目录（名称/类型/行数/更新时间/文件路径）
 index/summary.json                # 全部客户端汇总
 state.json                        # 同步状态（SHA256、更新时间），用于增量同步
