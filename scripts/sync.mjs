@@ -285,6 +285,138 @@ function pickArtifact(manifest, preferredKeys) {
 }
 
 // ---------------------------------------------------------------------------
+// 规则目录 README（rules/<客户端>/README.md）
+// ---------------------------------------------------------------------------
+
+const COMMON_RULES = [
+  'Advertising',
+  'AdvertisingLite',
+  'Privacy',
+  'Direct',
+  'China',
+  'Global',
+  'Lan',
+  'YouTube',
+  'Netflix',
+  'Telegram',
+  'OpenAI',
+  'Spotify',
+  'Steam',
+];
+
+const REPOSITORY_PATTERN = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
+
+function resolveRepository(config) {
+  const fromEnv = String(process.env.GITHUB_REPOSITORY || '').trim();
+  if (REPOSITORY_PATTERN.test(fromEnv)) return fromEnv;
+  const fromConfig = String(config.repository || '').trim();
+  if (REPOSITORY_PATTERN.test(fromConfig)) return fromConfig;
+  return null;
+}
+
+const escapeCell = (value) => String(value || '').replace(/\|/g, '\\|').replace(/\n/g, ' ').trim();
+
+function policyFor(name) {
+  if (/^Advertising|Privacy/i.test(name)) return 'REJECT';
+  if (/^(Direct|China|Global|Lan)$/i.test(name)) return 'DIRECT';
+  return 'PROXY';
+}
+
+const providerKey = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+function buildCommonBlock(client, rawBase, ext, names) {
+  const picked = names.map((name) => ({ name, policy: policyFor(name) }));
+  switch (client) {
+    case 'Surge':
+    case 'Loon':
+    case 'Shadowrocket':
+      return ['[Rule]', ...picked.map(({ name, policy }) => `RULE-SET,${rawBase}/${name}${ext},${policy}`)].join('\n');
+    case 'Mihomo':
+    case 'Stash': {
+      const providers = picked
+        .map(
+          ({ name }) => `  ${providerKey(name)}:
+    type: http
+    behavior: classical
+    url: "${rawBase}/${name}${ext}"
+    path: ./ruleset/${providerKey(name)}${ext}
+    interval: 86400`,
+        )
+        .join('\n');
+      const rules = picked.map(({ name, policy }) => `  - RULE-SET,${providerKey(name)},${policy}`).join('\n');
+      return `rule-providers:\n${providers}\n\nrules:\n${rules}`;
+    }
+    case 'QuantumultX':
+      return [
+        '[filter_remote]',
+        ...picked.map(
+          ({ name, policy }) =>
+            `${rawBase}/${name}${ext}, tag=${name}, force-policy=${policy.toLowerCase()}, update-interval=86400`,
+        ),
+      ].join('\n');
+    case 'SingBox': {
+      const items = picked.map(
+        ({ name }) =>
+          `  {\n    "type": "remote",\n    "tag": "${providerKey(name)}",\n    "format": "source",\n    "url": "${rawBase}/${name}${ext}",\n    "download_detour": "direct"\n  }`,
+      );
+      return `{\n  "rule_set": [\n${items.join(',\n')}\n  ]\n}`;
+    }
+    default:
+      return picked.map(({ name, policy }) => `RULE-SET,${rawBase}/${name}${ext},${policy}`).join('\n');
+  }
+}
+
+function buildClientCatalog(plan, repository) {
+  const { client, snapshot } = plan;
+  const rawBase = `https://raw.githubusercontent.com/${repository}/main/rules/${client}`;
+  const jsdBase = `https://cdn.jsdelivr.net/gh/${repository}@main/rules/${client}`;
+  const byName = new Map(snapshot.rules.map((rule) => [rule.name, rule]));
+  const extOf = (rule) => rule.file.slice(rule.file.lastIndexOf('.'));
+  const commonNames = COMMON_RULES.filter((name) => byName.has(name));
+  const commonExt = commonNames.length > 0 ? extOf(byName.get(commonNames[0])) : '';
+
+  const rows = snapshot.rules
+    .slice()
+    .sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))
+    .map((rule) => {
+      const date = (rule.rule_updated_at || '').slice(0, 10);
+      const fileName = encodeURIComponent(rule.file.slice(rule.file.lastIndexOf('/') + 1));
+      return `| ${escapeCell(rule.name)} | ${escapeCell(rule.chinese_name)} | ${rule.total_line_count || 0} | ${date} | [raw](${rawBase}/${fileName}) |`;
+    })
+    .join('\n');
+
+  return [
+    `# ${client} 规则目录`,
+    '',
+    `> 上游：[MagicRule](https://magicrule.pages.dev) · 本目录每天自动同步 · 本页由 [scripts/sync.mjs](../../scripts/sync.mjs) 生成，请勿手动编辑。`,
+    '',
+    `- 原始地址前缀：\`${rawBase}/\``,
+    `- 国内镜像（jsDelivr）：\`${jsdBase}/\``,
+    `- 规则数：**${snapshot.rule_count}** · 总行数：**${snapshot.total_line_count}**`,
+    '',
+    `## 常用规则（可直接复制）`,
+    '',
+    '> 下面的示例可直接粘贴到客户端配置里；策略名 `REJECT` / `DIRECT` / `PROXY` 按需替换成你自己的策略组。',
+    '',
+    '```' + (client === 'SingBox' ? 'json' : client === 'Mihomo' || client === 'Stash' ? 'yaml' : 'ini'),
+    buildCommonBlock(client, rawBase, commonExt, commonNames),
+    '```',
+    '',
+    `## 全部规则（${snapshot.rule_count}）`,
+    '',
+    '<details>',
+    `<summary>展开全部 ${snapshot.rule_count} 条</summary>`,
+    '',
+    '| 规则 | 说明 | 条数 | 更新时间 | 原始链接 |',
+    '| --- | --- | ---: | --- | --- |',
+    rows,
+    '',
+    '</details>',
+    '',
+  ].join('\n');
+}
+
+// ---------------------------------------------------------------------------
 // 单条规则同步
 // ---------------------------------------------------------------------------
 
@@ -536,6 +668,11 @@ async function main() {
   if (!config) throw new Error(`配置文件不存在: ${opts.config}`);
   if (!Array.isArray(config.clients) || config.clients.length === 0) throw new Error('config.clients 必须是非空数组');
 
+  const repository = resolveRepository(config);
+  if (!repository) {
+    console.warn('[警告] 未配置仓库地址（config.repository 或 GITHUB_REPOSITORY），本次不生成 rules/<客户端>/README.md 目录页。');
+  }
+
   const targets = opts.clients ? config.clients.filter((c) => opts.clients.includes(c)) : config.clients;
   if (targets.length === 0) throw new Error(`没有匹配的客户端，可选: ${config.clients.join(', ')}`);
 
@@ -602,6 +739,13 @@ async function main() {
     // 3) 写索引快照
     for (const plan of plans) {
       await writeJson(path.join(opts.out, 'index', `${plan.client}.json`), plan.snapshot);
+    }
+    // 3.5) 写各客户端规则目录 README（含可直接复制的常用规则模板 + 全部规则链接）
+    if (repository) {
+      for (const plan of plans) {
+        const catalogPath = path.join(opts.out, 'rules', plan.client, 'README.md');
+        await writeFileAtomic(catalogPath, Buffer.from(buildClientCatalog(plan, repository), 'utf8'));
+      }
     }
     // 4) 写 summary 与 state
     const summaryPath = path.join(opts.out, 'index', 'summary.json');
