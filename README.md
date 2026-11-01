@@ -91,24 +91,6 @@ https://raw.githubusercontent.com/Valiumlove/magicrule-mirror/main/rules/Quantum
 
 > 各客户端语法版本差异较大，上面只是最小示例，具体请以对应客户端文档为准。
 
-## 首次部署
-
-1. 在 GitHub 新建一个**公开**仓库（例如 `magicrule-mirror`），**不要**勾选 "Add a README file / .gitignore / license"（保持空仓库，避免和本地提交冲突）。
-2. 在本目录（`magicrule-mirror/`）推送代码（仓库里只有脚本和配置，规则文件由 Action 生成，不用本地上传大文件）：
-
-   ```bash
-   cd magicrule-mirror
-   git remote add origin https://github.com/Valiumlove/magicrule-mirror.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-   用 SSH 的话把地址换成 `git@github.com:Valiumlove/magicrule-mirror.git`。
-3. 仓库 **Settings → Actions → General → Workflow permissions** 选择 **Read and write permissions**。
-4. 打开 **Actions → 同步 MagicRule 规则 → Run workflow**，手动跑一次。
-   首次会下载全部规则（7 个客户端约 190 MB，通常 10～20 分钟），之后每天只同步变化。
-5. 等首次运行完成，`rules/` 下就会出现规则文件，上面模板里的 raw 地址即可使用；以后每天看 Actions 的运行摘要即可知道更新了多少条。
-
 ## 本地运行
 
 需要 Node.js 20+（零第三方依赖）：
@@ -149,7 +131,7 @@ node scripts/sync.mjs --dry-run            # 只看计划不写文件
 ## 注意事项
 
 - 建议用**公开仓库**：Actions 免费额度足够，raw 地址也方便直接订阅。
-- 仓库首次同步后约 190 MB；如果只需要一两个客户端，把 `config.json` 的 `clients` 改小（比如 `["Surge"]` 约 25 MB）。
+- 仓库约 190 MB；如果只需要一两个客户端，把 `config.json` 的 `clients` 改小（比如 `["Surge"]` 约 25 MB），再在 Actions 里勾选 prune 跑一次。
 - GitHub 的定时任务在仓库长期无活动时可能被暂停；本仓库每天有机器人提交通常不会触发，万一被暂停，手动 Run workflow 一次即可恢复。
 - 上游接口若改版（`/data/index/*.json` 结构变化等），同步会失败且当天不提交、旧数据不受影响；此时更新 `scripts/sync.mjs` 即可。
 - 规则内容版权归 MagicRule 及其上游规则作者所有，本仓库仅做格式镜像，不修改规则内容；使用前请自行评估风险（去广告规则可能存在误拦截）。
