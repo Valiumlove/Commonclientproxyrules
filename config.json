@@ -1,5 +1,6 @@
 {
   "upstream": "https://magicrule.pages.dev",
+  "repository": "Valiumlove/magicrule-mirror",
   "clients": [
     "Surge",
     "Mihomo",
