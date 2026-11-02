@@ -1,5 +1,8 @@
 # 代理规则
 
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Valiumlove/Commonclientproxyrules/main?label=最新构建)](https://github.com/Valiumlove/Commonclientproxyrules/tree/main)
+[![jsdelivr stats](https://data.jsdelivr.com/v1/package/gh/Valiumlove/Commonclientproxyrules/badge?style=rounded)](https://www.jsdelivr.com/package/gh/Valiumlove/Commonclientproxyrules)
+
 ## 项目简介
 
 每天自动抓取互联网上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box / Egern 直接订阅。
