@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-每天自动把 [MagicRule](https://magicrule.pages.dev) 上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box 直接订阅。
+每天自动收集互联网上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box 直接订阅。
 
 - 上游：`https://magicrule.pages.dev`（规则由它聚合生成）
 - 更新：GitHub Actions 每天 **03:23 UTC**（北京时间 11:23）自动运行，周日自动做一次全量核对；也可手动触发
