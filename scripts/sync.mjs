@@ -361,6 +361,14 @@ function buildCommonBlock(client, rawBase, ext, names) {
       );
       return `{\n  "rule_set": [\n${items.join(',\n')}\n  ]\n}`;
     }
+    case 'Egern': {
+      const policyName = (policy) => (policy === 'REJECT' ? 'Reject' : policy === 'DIRECT' ? 'Direct' : 'Proxy');
+      const items = picked.map(
+        ({ name, policy }) =>
+          `  - rule_set: "${rawBase}/${name}${ext}"\n    policy: ${policyName(policy)}\n    update_interval: 86400`,
+      );
+      return `rules:\n${items.join('\n')}`;
+    }
     default:
       return picked.map(({ name, policy }) => `RULE-SET,${rawBase}/${name}${ext},${policy}`).join('\n');
   }
@@ -396,9 +404,9 @@ function buildClientCatalog(plan, repository) {
     '',
     `## 常用规则（可直接复制）`,
     '',
-    '> 下面的示例可直接粘贴到客户端配置里；策略名 `REJECT` / `DIRECT` / `PROXY` 按需替换成你自己的策略组。',
+    '> 下面的示例可直接粘贴到客户端配置里；策略名（`REJECT`/`Reject`、`DIRECT`/`Direct`、`PROXY`/`Proxy`）按客户端写法替换成你自己的策略组。',
     '',
-    '```' + (client === 'SingBox' ? 'json' : client === 'Mihomo' || client === 'Stash' ? 'yaml' : 'ini'),
+    '```' + (client === 'SingBox' ? 'json' : ['Mihomo', 'Stash', 'Egern'].includes(client) ? 'yaml' : 'ini'),
     buildCommonBlock(client, rawBase, commonExt, commonNames),
     '```',
     '',
