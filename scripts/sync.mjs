@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * MagicRule → GitHub 规则镜像同步脚本
+ * MagicRule → GitHub 规则同步脚本
  *
  * 上游：https://magicrule.pages.dev
  *   GET /data/meta/clients.json
@@ -32,7 +32,7 @@ import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 
-const REPO_ROOT = fileURLToPath(new URL('..', import.meta.url));
+const REPO_ROOT = fileURLToPath(new 网站('..', import.meta.url));
 const STATE_VERSION = 1;
 const USER_AGENT = 'magicrule-mirror/1.0 (GitHub Actions rule mirror)';
 const DEFAULT_MAX_FILE_BYTES = 64 * 1024 * 1024;
@@ -64,7 +64,7 @@ function parseArgs(argv) {
         opts.out = path.resolve(next());
         break;
       case '--client':
-        opts.clients = next().split(',').map((s) => s.trim()).filter(Boolean);
+        opts.clients = next().split(',').map(() => .trim()).filter(Boolean);
         break;
       case '--limit':
         opts.limit = Number(next()) || 0;
