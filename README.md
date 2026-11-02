@@ -8,7 +8,7 @@
 每天自动抓取互联网上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box / Egern 直接订阅。
 
 - 更新：GitHub Actions 每天 **03:23 UTC**（北京时间 11:23）自动运行，周日自动做一次全量核对；也可手动触发
-- 原则：规则正文不变就不重写规则文件；只有上游确实改了规则才提交。偶尔会产生只含 `index/`、`state.json` 的元数据提交（正文没变）
+- 原则：规则正文不变就不重写规则文件；只有上游确实改了规则才提交。偶尔会产生只含 `index/`、`state.json` 的元数据提交（正文不变）
 
 ## 支持的客户端
 
