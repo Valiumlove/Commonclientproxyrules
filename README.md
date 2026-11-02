@@ -157,7 +157,7 @@ node scripts/sync.mjs --dry-run            # 只看计划不写文件
 ## 注意事项
 
 - 建议用**公开仓库**：Actions 免费额度足够，raw 地址也方便直接订阅。
-- 仓库约 190 MB；如果只需要一两个客户端，把 `config.json` 的 `clients` 改小（比如 `["Surge"]` 约 25 MB），再在 Actions 里勾选 prune 跑一次。
+- 仓库约 210 MB；如果只需要一两个客户端，把 `config.json` 的 `clients` 改小（比如 `["Surge"]` 约 25 MB），再在 Actions 里勾选 prune 跑一次。
 - GitHub 的定时任务在仓库长期无活动时可能被暂停；本仓库每天有机器人提交通常不会触发，万一被暂停，手动 Run workflow 一次即可恢复。
 - 上游接口若改版（`/data/index/*.json` 结构变化等），同步会失败且当天不提交、旧数据不受影响；此时更新 `scripts/sync.mjs` 即可。
 - 规则内容版权归 MagicRule 及其上游规则作者所有，本仓库仅做格式镜像，不修改规则内容；使用前请自行评估风险（去广告规则可能存在误拦截）。
