@@ -1,6 +1,7 @@
 代理规则集
 
-##项目介绍
+## 项目简介
+
 每天自动把 [MagicRule](https://magicrule.pages.dev) 上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box 直接订阅。
 
 - 上游：`https://magicrule.pages.dev`（规则由它聚合生成）
