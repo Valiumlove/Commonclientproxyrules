@@ -37,19 +37,6 @@
 | Stash | [rules/Stash/README.md](rules/Stash/README.md) |
 | Sing-box | [rules/SingBox/README.md](rules/SingBox/README.md) |
 
-## 目录结构
-
-```
-rules/<客户端>/<规则名>.<扩展名>   # 规则文件本体
-rules/<客户端>/README.md          # 自动生成的规则目录（常用规则导入片段 + 全部 raw 链接）
-index/<客户端>.json               # 该客户端的规则目录（名称/类型/行数/更新时间/文件路径）
-index/summary.json                # 全部客户端汇总
-state.json                        # 同步状态（SHA256、更新时间），用于增量同步
-config.json                       # 同步配置
-scripts/sync.mjs                  # 同步脚本（零依赖）
-.github/workflows/sync.yml        # 每日自动同步工作流
-```
-
 ## 使用方法
 
 Raw 地址模板：
