@@ -7,7 +7,6 @@
 
 每天自动抓取互联网上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box / Egern 直接订阅。
 
-- 上游：`https://magicrule.pages.dev`（规则由它聚合生成）
 - 更新：GitHub Actions 每天 **03:23 UTC**（北京时间 11:23）自动运行，周日自动做一次全量核对；也可手动触发
 - 原则：规则正文不变就不重写规则文件；只有上游确实改了规则才提交。偶尔会产生只含 `index/`、`state.json` 的元数据提交（正文没变）
 
@@ -26,10 +25,10 @@
 
 > 每个规则集一个文件，文件名就是上游规则名（如 `Advertising.list`、`Direct.yaml`）。
 > 每个客户端目录下还有一份自动生成的 [`README.md`](rules/Surge/README.md)，里面是**可直接复制的常用规则导入片段**和全部规则的 raw 链接。
->
-> 需要 AdGuard / Surfboard？在 `config.json` 的 `clients` 里加上即可（见下文）。
+
 
 ## 直接打开各客户端规则目录
+
 
 | 客户端 | 规则目录（含复制导入示例 + 全部规则链接） |
 | --- | --- |
