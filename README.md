@@ -1,6 +1,7 @@
-# MagicRule 规则镜像
+代理规则集
 
-每天自动把 [MagicRule](https://magicrule.pages.dev/#/c/Surge) 上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box 直接订阅。
+##项目介绍
+每天自动把 [MagicRule](https://magicrule.pages.dev) 上的规则抓取到本仓库，供 Surge / Mihomo / Quantumult X / Loon / Shadowrocket / Stash / Sing-box 直接订阅。
 
 - 上游：`https://magicrule.pages.dev`（规则由它聚合生成）
 - 更新：GitHub Actions 每天 **03:23 UTC**（北京时间 11:23）自动运行，周日自动做一次全量核对；也可手动触发
@@ -105,6 +106,10 @@ https://raw.githubusercontent.com/Valiumlove/magicrule-mirror/main/rules/Quantum
 ```
 
 > 各客户端语法版本差异较大，上面只是最小示例，具体请以对应客户端文档为准。
+
+> [!CAUTION]
+>
+> **禁止任何形式转载或发布至中国大陆地区**
 
 ## 致谢
 
