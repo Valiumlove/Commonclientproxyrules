@@ -8,7 +8,7 @@
 
 ## 常用规则（可直接复制）
 
-> 下面的示例可直接粘贴到客户端配置里；策略名 `REJECT` / `DIRECT` / `PROXY` 按需替换成你自己的策略组。
+> 下面的示例可直接粘贴到客户端配置里；策略名（`REJECT`/`Reject`、`DIRECT`/`Direct`、`PROXY`/`Proxy`）按客户端写法替换成你自己的策略组。
 
 ```yaml
 rule-providers:

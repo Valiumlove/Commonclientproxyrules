@@ -2,6 +2,13 @@
   "upstream": "https://magicrule.pages.dev",
   "clients": [
     {
+      "client": "Egern",
+      "rule_count": 1185,
+      "total_line_count": 816233,
+      "bytes": 19375623,
+      "failed": 0
+    },
+    {
       "client": "Loon",
       "rule_count": 1185,
       "total_line_count": 816093,
